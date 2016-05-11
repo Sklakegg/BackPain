@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="android.com.backpain.Criterion">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/header_border">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/criterionHeader"
+                android:textSize="50sp"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/criterionSubHeader"
+                android:textSize="30sp"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="20dp">
+
+                <TextView
+                    android:id="@+id/criterion1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Criterion 1"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_marginTop="20dp" />
+
+                <SeekBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/seekBar"
+                    android:focusableInTouchMode="true"
+                    android:layout_marginTop="20dp" />
+
+                <TextView
+                    android:id="@+id/criterion2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Criterion 2"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_marginTop="20dp" />
+
+                <SeekBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/seekBar2"
+                    android:focusableInTouchMode="true"
+                    android:layout_marginTop="20dp" />
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Show only expert solutions"
+                        android:id="@+id/textView"
+                        android:textSize="20dp"
+                        android:layout_marginRight="20dp" />
+
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:id="@+id/expertSolutionSwitch" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
