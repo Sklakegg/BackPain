@@ -8,9 +8,10 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:weightSum="1"
-        android:layout_alignParentTop="true">
+        android:layout_alignParentTop="true"
+        android:id="@+id/linearLayout">
 
         <LinearLayout
             android:orientation="vertical"
@@ -43,7 +44,7 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
             <TableLayout
                 android:layout_width="0dp"
@@ -57,14 +58,17 @@
                     android:layout_height="wrap_content"
                     android:text="Criterion 1"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:layout_marginTop="20dp" />
+                    android:layout_marginTop="80dp"
+                    android:layout_marginLeft="40dp" />
 
                 <SeekBar
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/seekBar"
                     android:focusableInTouchMode="true"
-                    android:layout_marginTop="20dp" />
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_marginLeft="40dp" />
 
                 <TextView
                     android:id="@+id/criterion2"
@@ -72,14 +76,51 @@
                     android:layout_height="wrap_content"
                     android:text="Criterion 2"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:layout_marginTop="20dp" />
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="40dp" />
 
                 <SeekBar
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/seekBar2"
                     android:focusableInTouchMode="true"
-                    android:layout_marginTop="20dp" />
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_marginLeft="40dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Criterion 3"
+                    android:id="@+id/criterion3"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="40dp" />
+
+                <SeekBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/seekBar3"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="80dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Criterion 4"
+                    android:id="@+id/criterion4"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="40dp" />
+
+                <SeekBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/seekBar4"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="80dp" />
             </TableLayout>
 
             <TableLayout
@@ -95,19 +136,138 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Show only expert solutions"
+                        android:textColor="#000000"
                         android:id="@+id/textView"
                         android:textSize="20dp"
-                        android:layout_marginRight="20dp" />
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="70dp"
+                        android:layout_marginLeft="60dp" />
 
                     <Switch
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=" "
-                        android:id="@+id/expertSolutionSwitch" />
+                        android:id="@+id/expertSolutionSwitch"
+                        android:layout_marginTop="70dp"
+                        android:splitTrack="false" />
                 </TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Solution 1"
+                    android:id="@+id/textSolution1"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="30dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Details"
+                    android:textColor="#000000"
+                    android:id="@+id/textDetails1"
+                    android:layout_marginLeft="30dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Solution 2"
+                    android:id="@+id/textSolution2"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="30dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Details"
+                    android:textColor="#000000"
+                    android:id="@+id/textDetails2"
+                    android:layout_marginLeft="30dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Solution 3"
+                    android:id="@+id/textSolution3"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="30dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Details"
+                    android:textColor="#000000"
+                    android:id="@+id/textDetails3"
+                    android:layout_marginLeft="30dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Solution 4"
+                    android:id="@+id/textSolution4"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="30dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Details"
+                    android:textColor="#000000"
+                    android:id="@+id/textDetails4"
+                    android:layout_marginLeft="30dp" />
             </TableLayout>
         </LinearLayout>
 
     </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tableRow"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Take a survey and help science!"
+            android:textColor="#891477"
+            android:id="@+id/textView2"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:clickable="false"
+            android:onClick="onSurveyClick" />
+    </LinearLayout>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/tablerow_boarder"
+        android:weightSum="1"
+        android:id="@+id/tableRow"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/informationTextView"
+            android:layout_weight="0.27"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="220dp"
+            android:layout_marginRight="220dp" />
+    </TableRow>
 
 </RelativeLayout>
