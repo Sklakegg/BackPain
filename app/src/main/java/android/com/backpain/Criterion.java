@@ -10,15 +10,14 @@ import android.text.style.AbsoluteSizeSpan;
 import android.text.style.ForegroundColorSpan;
 import android.text.style.RelativeSizeSpan;
 import android.view.View;
+import android.widget.SeekBar;
 import android.widget.TextView;
 
 public class Criterion extends AppCompatActivity {
 
     TextView criterionHeader;
     TextView criterionSubHeader;
-    TextView information;
-
-
+    SeekBar criterion1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,11 +26,13 @@ public class Criterion extends AppCompatActivity {
 
         criterionHeader = (TextView)findViewById(R.id.criterionHeader);
         criterionSubHeader = (TextView)findViewById(R.id.criterionSubHeader);
-        information = (TextView)findViewById(R.id.informationTextView);
+        criterion1 = (SeekBar)findViewById(R.id.seekBar);
 
         criterionHeader.setText("Selaa hoitokeinoja!");
         criterionSubHeader.setText("Määrittele mieleisin hoitokeinoja eri kriteerien perusteella");
-        information.setText("Logos / contact details / link to online interface (kipuriihi.org)");
+        //criterion1.setScaleY(2f);
+        //criterion1.setScaleX(1f);
+
     }
 
     public void onSurveyClick(View V) {

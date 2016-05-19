@@ -1,14 +1,17 @@
 package android.com.backpain;
 
+import android.graphics.drawable.ShapeDrawable;
+import android.graphics.drawable.shapes.RectShape;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.SeekBar;
 import android.widget.TextView;
 
 public class Survey extends AppCompatActivity {
 
     TextView surveyHeader;
     TextView surveySubHeader;
-    TextView information;
+    SeekBar lol;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,10 +20,11 @@ public class Survey extends AppCompatActivity {
 
         surveyHeader = (TextView)findViewById(R.id.surveyHeader);
         surveySubHeader = (TextView)findViewById(R.id.surveySubHeader);
-        information = (TextView)findViewById(R.id.informationTextView);
+        lol = (SeekBar)findViewById(R.id.seekBar5);
 
         surveyHeader.setText("Vastaa kyselyyn!");
         surveySubHeader.setText("Vastaamalla voit voittaa, ja lisäksi autat sovelluksen kehittämistä.");
-        information.setText("Logos / contact details / link to online interface (kipuriihi.org)");
+        lol.setScaleY(3f);
+        //lol.setScaleX(1f);
     }
 }

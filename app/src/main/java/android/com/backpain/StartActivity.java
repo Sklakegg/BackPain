@@ -12,7 +12,6 @@ import android.widget.TextView;
 public class StartActivity extends AppCompatActivity {
 
     TextView motivational;
-    TextView information;
     ImageView akatemia;
     ImageView ubicomp;
 
@@ -23,7 +22,6 @@ public class StartActivity extends AppCompatActivity {
         setContentView(R.layout.activity_start);
 
         motivational = (TextView)findViewById(R.id.motivation);
-        information = (TextView)findViewById(R.id.informationTextView);
         akatemia = (ImageView)findViewById(R.id.imageView);
         ubicomp = (ImageView)findViewById(R.id.imageView2);
 
@@ -34,9 +32,6 @@ public class StartActivity extends AppCompatActivity {
                 + "•    ..and how the user can help herself \n"
                 + "•    ..and science! (redirect to web interface, at least initially)");
 
-        information.setText("Logos / contact details / link to online interface (kipuriihi.org)");
-        akatemia.setImageResource(R.mipmap.ic_akatemia);
-        ubicomp.setImageResource(R.drawable.ic_ubicmp);
     }
 
     public void onStartClick(View V) {
